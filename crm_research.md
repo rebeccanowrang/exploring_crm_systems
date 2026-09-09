@@ -168,49 +168,143 @@ set and open-source control matter. A large organization considering
 open source must budget for hosting, security, customization, backups,
 upgrades, and support.
 
-# Part 3 -- Open Source CRM Exploration
+# Part 3 – Open Source CRM Exploration
 
 ## Selected Product: SuiteCRM
 
-SuiteCRM was selected because official documentation covers
-authentication, dashboards, leads, accounts, contacts, opportunities,
-activities, campaigns, cases, and reports.
+For the open-source CRM exploration, I selected **SuiteCRM**. SuiteCRM is an open-source Customer Relationship Management system that provides modules for managing contacts, leads, accounts, opportunities, activities, campaigns, customer support, reports, and dashboards.
+
+For the hands-on portion of this assignment, I used the **SuiteCRM 7 public online demo**. Using the online demo allowed me to explore the CRM interface and its major modules without having to configure a local web server and database.
+
+Current SuiteCRM installation requirements and architecture were researched separately using the official SuiteCRM documentation.
 
 ## Installation Experience
 
-SuiteCRM 8 documentation uses a LAMP-style setup as a base example:
-Linux, Apache, MySQL/MariaDB, and PHP. Required PHP modules,
-permissions, compatible versions, and URL rewriting must be configured.
+### Was installation easy?
 
-**Ease:** Moderate. Documentation is helpful, but self-hosting requires
-basic server, PHP, and database knowledge.
+For my hands-on evaluation, I used SuiteCRM's public online demo instead of performing a local installation. Because the demo environment was already configured, getting started was easy. I only needed to access the demo website and log in using the provided demonstration account.
 
-**Challenges:** version compatibility, PHP extensions, Apache
-configuration, URL rewriting, file permissions, database credentials,
-and environment-specific errors.
+A local installation would be more complicated. Based on the official SuiteCRM documentation, a self-hosted installation requires a compatible web server, PHP environment, database, required PHP extensions, correct permissions, and web-server configuration.
 
-**How AI helped:** AI translated documentation into a checklist,
-explained server terms, and suggested troubleshooting areas. Version
-requirements were verified using SuiteCRM's official compatibility
-matrix.
+### What challenges occurred?
 
-## Product Evaluation
+The public demo itself was easy to access. The main challenge was learning where different CRM functions were located within the navigation menus.
 
-**Impressive:** broad sales modules, cases, campaigns, activities,
-reports, dashboards, and centralized customer information.
+For example, Contacts and Leads were available through the CRM navigation, while Reports had to be located among the additional modules. The public Reports module also did not contain saved report records during my evaluation.
 
-**Potential limitations:** self-hosting creates maintenance
-responsibility; administration may require training;
-integrations/customizations need planning.
+Another consideration is that a public demo is shared and periodically refreshed. Therefore, the data shown in the system is demonstration data rather than information I created myself.
 
-**Would I use it?** Yes, I would consider SuiteCRM for an organization
-that values open-source control and has technical support. For a very
-small organization without IT support, a hosted CRM may be easier.
+### How did AI help?
 
-## Required Screenshots
+ChatGPT helped me:
 
-Replace the placeholders in `screenshots/` with personally captured
-SuiteCRM images: login, dashboard, contacts, leads, and reports.
+- Identify SuiteCRM as an appropriate open-source CRM for the assignment.
+- Locate the SuiteCRM public demo.
+- Navigate to the required modules.
+- Identify the correct screens to capture.
+- Understand the purpose of Contacts, Leads, Reports, and Dashboards.
+- Research the requirements that would be involved in a local SuiteCRM installation.
+- Verify technical information using official SuiteCRM documentation.
+
+AI made the exploration faster, but I verified the actual product behavior by using SuiteCRM myself.
+
+## Product Experience
+
+### Dashboard
+
+After logging in, I explored the **SuiteCRM Dashboard**. The dashboard displayed several Dashlets, including **My Calls, My Meetings, and My Activity Stream**.
+
+I found the dashboard useful because it provides important information in one location. A salesperson could use this screen to quickly review upcoming calls and meetings as well as recent CRM activity.
+
+![SuiteCRM Dashboard](screenshots/dashboard.png)
+
+### Contacts Module
+
+The **Contacts** module contained a list of demonstration customer contacts. The screen displayed information such as:
+
+- Name
+- Job Title
+- Account Name
+- Email
+- Office Phone
+- Assigned User
+- Date Created
+
+During my exploration, the demo showed approximately **200 contact records**.
+
+I liked how the information was organized into a searchable table because it would allow employees to quickly locate customer information.
+
+![SuiteCRM Contacts](screenshots/contacts.png)
+
+### Leads Module
+
+The **Leads** module was similar to the Contacts module but focused on potential customers.
+
+The screen included information such as:
+
+- Lead Name
+- Status
+- Account Name
+- Office Phone
+- Email
+- Assigned User
+- Date Created
+
+The public demo also displayed approximately **200 lead records**.
+
+One feature I found useful was the **Status** field. Leads could have statuses such as New, Assigned, In Process, Converted, Recycled, or Dead. This would help a sales team understand where prospects are in the sales process.
+
+![SuiteCRM Leads](screenshots/leads.png)
+
+### Reports Module
+
+I also explored the **Reports** module. SuiteCRM provides options to create and view reports.
+
+During my evaluation, the public demo did not contain saved report records. The interface displayed the message that there were currently no records saved and provided options to **Create** or **Import** a report.
+
+Although I could not evaluate an existing report in the shared demo, the module demonstrated that reporting is built into the CRM.
+
+![SuiteCRM Reports](screenshots/reports.png)
+
+### Login Screen
+
+SuiteCRM uses a traditional username-and-password login interface. Authentication is important in a CRM because the system may contain customer information and other business data that should only be accessible to authorized users.
+
+![SuiteCRM Login](screenshots/login.png)
+
+## What Features Impressed Me?
+
+Several features impressed me during the exploration.
+
+First, SuiteCRM provides many CRM functions in one application. Contacts, leads, sales activities, meetings, calls, opportunities, and reports can all be accessed from the same system.
+
+Second, I liked the dashboard because it provides employees with a quick overview of their work and recent CRM activity.
+
+The Contacts and Leads modules were also easy to understand. The table layout made it possible to see important information without opening every individual record.
+
+Finally, SuiteCRM being open source is an important advantage for organizations that want greater control over their CRM software and deployment.
+
+## What Features Were Missing or Limited?
+
+The biggest limitation during my evaluation was the **Reports** section of the public demo. There were no saved reports available to examine.
+
+The public demo is also not the same as administering a real CRM installation. I could explore the interface and modules, but I did not evaluate server administration, backups, upgrades, production security configuration, or organization-specific customization.
+
+The interface also has many modules and options, which could require training for employees who have never used a CRM.
+
+## Would I Use SuiteCRM in a Real Organization?
+
+I would consider SuiteCRM for a real organization, particularly if the organization wanted an open-source CRM and had technical staff available to maintain it.
+
+The system provides the major functions I would expect from a CRM, including contacts, leads, sales activities, dashboards, and reporting. It also gives organizations more control over deployment than a completely vendor-hosted CRM.
+
+However, I would also consider the organization's size and technical resources. A small business without IT support might find a hosted CRM easier because the vendor manages much of the infrastructure. An organization with technical staff may benefit more from the flexibility of an open-source system such as SuiteCRM.
+
+## Overall Evaluation
+
+My experience with the SuiteCRM public demo showed me how CRM concepts appear in an actual software system. Before completing this assignment, CRM modules such as contacts, leads, activities, and dashboards were mostly concepts from research. Exploring SuiteCRM helped me understand how these modules work together.
+
+Overall, SuiteCRM provided a useful example of a full-featured open-source CRM. The experience also demonstrated the value of combining AI-assisted research with hands-on software exploration rather than relying only on AI-generated descriptions.
 
 # Part 4 -- CRM Architecture
 
