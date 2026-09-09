@@ -45,16 +45,11 @@ candidate.
 
 ## Open Source CRM Evaluation
 
-**Selected product: SuiteCRM.** It provides traditional CRM modules
-including leads, accounts, contacts, opportunities, campaigns, cases,
-activities, reports, and dashboards. Self-hosting is more technical than
-a hosted CRM because server, PHP, database, modules, permissions, and
-web-server configuration must be compatible.
+**Selected product: SuiteCRM.** For the hands-on evaluation, I used the SuiteCRM 7 public online demo. I explored the login screen, dashboard, Contacts module, Leads module, and Reports module. The dashboard displayed calls, meetings, and recent CRM activity, while the Contacts and Leads modules contained sample records that demonstrated how customer and prospect information is organized.
 
-**Submission note:** The five files in `screenshots/` are placeholders.
-Replace them with screenshots you personally capture from SuiteCRM.
-Generated screenshots should not be presented as evidence of hands-on
-use.
+The public demo made it possible to evaluate SuiteCRM without performing a local installation. Current SuiteCRM installation requirements were researched separately using official SuiteCRM documentation. Based on my evaluation, SuiteCRM provides a broad traditional CRM feature set, although self-hosting would require technical knowledge for server configuration, security, maintenance, backups, and upgrades.
+
+Screenshots from my hands-on exploration are included in the `screenshots/` folder.
 
 ## CRM Architecture Proposal
 
